@@ -1,0 +1,52 @@
+#mainDiv {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    border: 10px double #484894;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#resultDiv {
+    background-color: #00FFFF;
+    font-size: 36px;
+    text-align: right;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-image: linear-gradient(#A1A1F2, #4D4D99);
+    color: white;
+    width: 15%;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-image: none;
+    background-color: #4D4D99;
+}
+
+.btn:active {
+    background-color: #20203e;
+}
+
+#clearBtn {
+    width: 40%;
+}
