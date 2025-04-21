@@ -1,27 +1,18 @@
-const resultDiv = document.getElementById("resultDiv");
-var equation = "";
+var resultDiv = document.getElementById("resultDiv");
+var equationString = "";
 
 function addNumber(number) {
-    equation = equation + number;
-    resultDiv.innerText = equation;
+    equationString = equationString + number;
+    resultDiv.innerText = equationString;
 }
 
-function calculate() {
-    const result = eval(equation);
+function calaculateEquation() {
+    var result = eval(equationString);
     resultDiv.innerText = result;
-    equation = result + "";
+    equationString = "";
 }
 
 function clearScreen() {
-    equation = "";
+    equationString = "";
     resultDiv.innerText = 0;
-}
-
-function deleteNumber() {
-    equation = equation.slice(0, -1);
-    if (equation == "") {
-        resultDiv.innerText = 0;
-    } else {
-        resultDiv.innerText = equation;
-    }
 }
