@@ -1,9 +1,5 @@
-var equation = "12+5+6+8-5/0*7+-/";
-const operators = ["+", "-", "/", "*"];
+var equationString = "13+24+15+16+18";
 
-var lastCharacter = equation.slice(-1);
+equationString = equationString.slice(0, -1);
 
-var result = operators.includes(lastCharacter);
-
-console.log(result);
-
+console.log(equationString);
