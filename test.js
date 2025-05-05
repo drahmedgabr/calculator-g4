@@ -1,5 +1,13 @@
-var equationString = "13+24+15+16+18";
+var equationString = "13+24+15+16+18+25-9*";
 
-equationString = equationString.slice(0, -1);
+var operators = ["+", "-", "*", "/"];
 
-console.log(equationString);
+var lastCharacter = equationString.slice(-1);
+
+if (operators.includes(lastCharacter)) {
+    console.log("yes");
+    
+} else {
+    console.log("no");
+    
+}
